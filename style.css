@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Calculator;
+    src: url(./fonts/Calculator.ttf);
+}
+
+body {
+    font-size: 16px;
+    
+    background-image: 
+      -webkit-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em),
+      -webkit-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+    background-image: 
+      -moz-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em),
+      -moz-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+    background-image: 
+      -o-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em), 
+      -o-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+    background-image: 
+      -ms-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em), 
+      -ms-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+    -webkit-background-size: 100% 2em;
+    -moz-background-size: 100% 2em;
+  
+    background-image: 
+      linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em), 
+      linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+    background-size: 100% 2em;
+  }
+
+
+
+.calculadoraBotones {
+    display: inline-grid;  
+    gap: 5px;
+    grid-template-columns:auto auto auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.calculadora {
+    background-color:grey;
+    display: inline-grid;  
+    border-style: solid;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+button {
+    text-align: center;
+    background-color: #343434;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 250%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.display, .valor {
+    background-color: #6C9C34;
+    font-size: x-large;
+    font-family: Calculator;
+    border-style: solid;
+}
+
+.valor {
+    min-height: 55.5px;
+    font-size: 2em; 
+    font-family: 'Calculator';
+    border: 6px solid #D4D4CC;
+    background-color: #6C9C34;
+    border-radius: 1px;
+    display: block;
+    padding: 10px;
+    text-align: right;
+    color: #343434;
+}
+
+
+h1 {
+    text-align: center;
+}
+.valor {
+    font-size:200%;
+}
+
+#reset {
+    background-color: #C35320;
+
+}
+.bordeadoDisplay {
+    background-color: #D4D4CC;
+    border-style: solid;
+
+}
